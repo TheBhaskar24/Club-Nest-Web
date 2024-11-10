@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f3f4f6;
+  }
+  
+  #user-form, #game-container {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #question-container, #answer-buttons, #money-pool {
+    margin-top: 10px;
+  }
+  
+  button {
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: red;
+    color: white;
+  }
+  
+
+  

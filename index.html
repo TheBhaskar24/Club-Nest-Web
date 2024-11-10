@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBC Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="user-form">
+    <h1>Enter Your Details</h1>
+    <form id="start-form">
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Age: <input type="number" id="age" required></label><br>
+      <label>Email: <input type="email" id="email" required></label><br>
+      <label>
+        Select Subject:
+        <select id="subject">
+          <option value="history">History</option>
+          <option value="math">Math</option>
+        </select>
+      </label><br>
+      <button type="submit">Start Quiz</button>
+    </form>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <h2>Welcome, <span id="username"></span></h2>
+    <div id="money-pool">Money Pool: $<span id="current-prize">0</span></div>
+    <div id="question-container">
+      <p id="question"></p>
+    </div>
+    <div id="answer-buttons" class="btn-container"></div>
+    <div id="explanation" class="hidden"></div>
+    <button id="next-btn" class="hidden">Next Question</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
